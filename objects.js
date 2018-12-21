@@ -7,11 +7,14 @@ var playlist = {
   
 };
 
+// function to update the playlist and return it.
 function updatePlaylist(playlist, artistName, songTitle) {
   playlist[artistName] = songTitle;
   return playlist;
 }
 
+// function to remove a key-value pair from the playlist and 
+// then return it.
 function removeFromPlaylist(playlist, artist) {
   delete playlist[artist];
   return playlist;
